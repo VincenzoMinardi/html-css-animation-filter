@@ -87,35 +87,26 @@
     filter: grayscale(.6);
     transform: scale(1.5);
 }
+
 .ex-10-icon {
     font-size: 60px;
-    animation-name: ruota;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite; 
+    animation: giro 1s linear infinite;
 }
-
-@keyframes ruota {
-    from{
-        transform: rotate(0deg);
-    }
-
-    to{
-        transform: rotate(-360deg);
+@keyframes giro {
+    0% {
+        transform: rotate(1turn);
     }
 }
 .ex-11-icon{
     font-size: 60px;
- 
 }
 
 .ex-11-icon:hover{
     animation-name: ruota;
-    animation-duration: 1.5s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     
 }
-
 @keyframes ruota{
   25%{
     transform: rotate(0deg);
@@ -140,6 +131,23 @@
     line-height: 70px;
     text-align: center;
     text-decoration: none;
+}
+
+.ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
 }
 
 .ex-12-button:hover .ex-12-top-white {
@@ -169,27 +177,6 @@
     100% {
         right: 20%;
     }
-}
-
-
-
-
-
-.ex-12-top-white, .ex-13-top-white {
-    position: absolute;
-    top: -10px;
-    left: 10%;
-    background: #f5f5f5;
-    width: 60px;
-    height: 20px;
-}
-.ex-12-bottom-white, .ex-13-bottom-white {
-    position: absolute;
-    bottom: -10px;
-    right: 20%;
-    background: #f5f5f5;
-    width: 60px;
-    height: 20px;
 }
 
 .ex-13-button:hover .ex-13-top-white {
